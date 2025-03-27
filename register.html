@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0e21;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .register {
+            width: 40%;
+            margin: 50px auto;
+            background: #152238;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section class="register">
+        <h2>Registration Form</h2>
+        <form action="registration" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="date" name="dob" placeholder="Date of Birth" required>
+            <input type="text" name="parentName" placeholder="Father's/Mother's Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="mobile" placeholder="Mobile No." required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirmPassword" placeholder="Re-enter Password" required>
+            <input type="number" name="aadhar" placeholder="Aadhar Number" required>
+            <!--<input type="hidden" name="vote">-->
+            <!--<input type="hidden" name="count">-->
+            <button type="submit">SUBMIT</button>
+        </form>
+    </section>
+</body>
+</html>

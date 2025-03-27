@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0e21;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .login {
+            width: 40%;
+            margin: 50px auto;
+            background: #152238;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .links {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .links a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        button {
+            background: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section class="login">
+        <h2>Login</h2>
+        <form action="login" method="post">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <div class="links">
+                <a href="#">Forgot Password?</a>
+                <a href="register.html">Not a user? Register now</a>
+            </div>
+            <button type="submit">LOGIN</button>
+        </form>
+    </section>
+</body>
+</html>
